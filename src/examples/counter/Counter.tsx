@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { Button, Card, Text } from 'react-native-elements'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -19,16 +19,44 @@ export const Counter = () => {
         <Text testID={`${TAG} Text`} style={styles.bigNumber}>
           {localCount}
         </Text>
-        <Button onPress={() => setLocalCount(localCount + 1)} title='+1' testID={`${TAG} Button Increment`} />
-        <Button onPress={() => setLocalCount(localCount - 1)} title='-1' testID={`${TAG} Button Decrement`} />
+        <View style={styles.buttonContainer}>
+          <Button
+            style={styles.button}
+            type='outline'
+            onPress={() => setLocalCount(localCount - 1)}
+            title='-1'
+            testID={`${TAG} Button Decrement`}
+          />
+          <Button
+            style={styles.button}
+            type='outline'
+            onPress={() => setLocalCount(localCount + 1)}
+            title='+1'
+            testID={`${TAG} Button Increment`}
+          />
+        </View>
       </Card>
 
       <Card title='Count (Redux State)'>
         <Text testID={`${TAG} Redux Text`} style={styles.bigNumber}>
           {count}
         </Text>
-        <Button onPress={() => dispatch(increment())} title='Add 1' testID={`${TAG} Redux Button Increment`} />
-        <Button onPress={() => dispatch(decrement())} title='Subtract 1' testID={`${TAG} Redux Button Decrement`} />
+        <View style={styles.buttonContainer}>
+          <Button
+            style={styles.button}
+            type='outline'
+            onPress={() => dispatch(decrement())}
+            title='- 1'
+            testID={`${TAG} Redux Button Decrement`}
+          />
+          <Button
+            style={styles.button}
+            type='outline'
+            onPress={() => dispatch(increment())}
+            title='+ 1'
+            testID={`${TAG} Redux Button Increment`}
+          />
+        </View>
       </Card>
     </>
   )
@@ -44,5 +72,12 @@ const styles = StyleSheet.create({
   bigNumber: {
     fontSize: 50,
     alignSelf: 'center',
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+  },
+  button: {
+    width: 100,
   },
 })

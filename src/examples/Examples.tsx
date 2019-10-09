@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Dimensions, Linking, View } from 'react-native'
+import { Linking, SafeAreaView, View } from 'react-native'
 import { ListItem } from 'react-native-elements'
 import { useNavigation } from 'react-navigation-hooks'
 
@@ -32,7 +32,7 @@ const links: Link[] = [
 export const Examples = () => {
   const { navigate } = useNavigation()
   return (
-    <View>
+    <>
       <ListItem
         testID={`${TAG} Button Counter`}
         title='Counters'
@@ -51,6 +51,6 @@ export const Examples = () => {
           chevron
         />
       ))}
-    </View>
+    </>
   )
 }
