@@ -8,16 +8,16 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@7.6.0":
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.6.0.tgz#9b00f73554edd67bebc86df8303ef678be3d7b48"
+"@babel/core@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.6.2.tgz#069a776e8d5e9eefff76236bc8845566bd31dd91"
   dependencies:
     "@babel/code-frame" "^7.5.5"
-    "@babel/generator" "^7.6.0"
-    "@babel/helpers" "^7.6.0"
-    "@babel/parser" "^7.6.0"
+    "@babel/generator" "^7.6.2"
+    "@babel/helpers" "^7.6.2"
+    "@babel/parser" "^7.6.2"
     "@babel/template" "^7.6.0"
-    "@babel/traverse" "^7.6.0"
+    "@babel/traverse" "^7.6.2"
     "@babel/types" "^7.6.0"
     convert-source-map "^1.1.0"
     debug "^4.1.0"
@@ -56,15 +56,14 @@
     source-map "^0.5.0"
     trim-right "^1.0.1"
 
-"@babel/generator@^7.6.0":
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.6.0.tgz#e2c21efbfd3293ad819a2359b448f002bfdfda56"
+"@babel/generator@^7.6.2", "@babel/generator@^7.6.3":
+  version "7.6.3"
+  resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.6.3.tgz#71d5375264f93ec7bac7d9f35a67067733f5578e"
   dependencies:
-    "@babel/types" "^7.6.0"
+    "@babel/types" "^7.6.3"
     jsesc "^2.5.1"
     lodash "^4.17.13"
-    source-map "^0.5.0"
-    trim-right "^1.0.1"
+    source-map "^0.6.1"
 
 "@babel/helper-annotate-as-pure@^7.0.0":
   version "7.0.0"
@@ -228,12 +227,12 @@
     "@babel/traverse" "^7.5.5"
     "@babel/types" "^7.5.5"
 
-"@babel/helpers@^7.6.0":
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.6.0.tgz#21961d16c6a3c3ab597325c34c465c0887d31c6e"
+"@babel/helpers@^7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@babel/helpers/-/helpers-7.6.2.tgz#681ffe489ea4dcc55f23ce469e58e59c1c045153"
   dependencies:
     "@babel/template" "^7.6.0"
-    "@babel/traverse" "^7.6.0"
+    "@babel/traverse" "^7.6.2"
     "@babel/types" "^7.6.0"
 
 "@babel/highlight@^7.0.0":
@@ -251,6 +250,10 @@
 "@babel/parser@^7.6.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.6.0.tgz#3e05d0647432a8326cb28d0de03895ae5a57f39b"
+
+"@babel/parser@^7.6.2", "@babel/parser@^7.6.3":
+  version "7.6.3"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.6.3.tgz#9eff8b9c3eeae16a74d8d4ff30da2bd0d6f0487e"
 
 "@babel/plugin-external-helpers@^7.0.0":
   version "7.2.0"
@@ -576,9 +579,9 @@
     pirates "^4.0.0"
     source-map-support "^0.5.9"
 
-"@babel/runtime@7.6.0":
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.0.tgz#4fc1d642a9fd0299754e8b5de62c631cf5568205"
+"@babel/runtime@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -618,16 +621,16 @@
     globals "^11.1.0"
     lodash "^4.17.13"
 
-"@babel/traverse@^7.6.0":
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.6.0.tgz#389391d510f79be7ce2ddd6717be66d3fed4b516"
+"@babel/traverse@^7.6.2":
+  version "7.6.3"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.6.3.tgz#66d7dba146b086703c0fb10dd588b7364cec47f9"
   dependencies:
     "@babel/code-frame" "^7.5.5"
-    "@babel/generator" "^7.6.0"
+    "@babel/generator" "^7.6.3"
     "@babel/helper-function-name" "^7.1.0"
     "@babel/helper-split-export-declaration" "^7.4.4"
-    "@babel/parser" "^7.6.0"
-    "@babel/types" "^7.6.0"
+    "@babel/parser" "^7.6.3"
+    "@babel/types" "^7.6.3"
     debug "^4.1.0"
     globals "^11.1.0"
     lodash "^4.17.13"
@@ -648,12 +651,24 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@babel/types@^7.6.3":
+  version "7.6.3"
+  resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.6.3.tgz#3f07d96f854f98e2fbd45c64b0cb942d11e8ba09"
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.17.13"
+    to-fast-properties "^2.0.0"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"
   dependencies:
     exec-sh "^0.3.2"
     minimist "^1.2.0"
+
+"@eva-design/eva@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@eva-design/eva/-/eva-1.2.0.tgz#dc7714f31b7abfd928a8a3cefc28726a506afc60"
 
 "@hapi/address@2.x.x":
   version "2.1.1"
@@ -3477,7 +3492,7 @@ jest@24.9.0:
     import-local "^2.0.0"
     jest-cli "^24.9.0"
 
-jetifier@^1.6.2:
+jetifier@^1.6.2, jetifier@^1.6.4:
   version "1.6.4"
   resolved "https://registry.yarnpkg.com/jetifier/-/jetifier-1.6.4.tgz#6159db8e275d97980d26162897a0648b6d4a3222"
 
@@ -4763,7 +4778,7 @@ react-native-elements@1.2.2:
     react-native-ratings "^6.3.0"
     react-native-status-bar-height "^2.2.0"
 
-react-native-gesture-handler@^1.4.1:
+react-native-gesture-handler@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.4.1.tgz#c38d9e57637b95e221722a79f2bafac62e3aeb21"
   dependencies:
