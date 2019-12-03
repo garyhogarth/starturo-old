@@ -1,6 +1,6 @@
 import React from 'react'
-import { Animated, Easing, StyleSheet, View, ViewProps } from 'react-native'
-import Svg, { G, Path } from 'react-native-svg'
+import { Animated, Easing, View } from 'react-native'
+import Svg, { Path } from 'react-native-svg'
 
 const AnimatedSvg = Animated.createAnimatedComponent(Svg)
 
@@ -10,7 +10,7 @@ interface WaveParams {
   fill: string
 }
 interface WaveProps {
-  waveParams: WaveParams
+  waveParams: WaveParams[]
   animated: boolean
   H: number
   style: any

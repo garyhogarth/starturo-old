@@ -3,8 +3,6 @@ import React, { useEffect, useRef } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { Text } from 'react-native-elements'
 
-import { Logger } from '#starturo/app'
-import Wave from '#starturo/app/common/Wave'
 import { Waves } from '#starturo/app/common/Waves'
 
 interface PointsBubbleProps {
@@ -79,7 +77,7 @@ export const PointsBubble = (props: PointsBubbleProps) => {
           waveParams={waveParams}
           animated={true}
         /> */}
-        <Waves />
+        <Waves waterHeight={waterHeight} height={diameter} width={diameter} />
         <Text style={[styles.pointsTotal, { fontSize, width: innerDiameter, textShadowRadius: 10 }]}>{points}</Text>
       </View>
     </>

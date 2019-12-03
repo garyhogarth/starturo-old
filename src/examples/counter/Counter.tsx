@@ -3,7 +3,6 @@ import { StyleSheet, View } from 'react-native'
 import { Button, Card, Text } from 'react-native-elements'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { Logger } from '#starturo/app'
 import { PointsBubble } from '#starturo/app/common/PointsBubble'
 import { decrement, getCount, increment } from '#starturo/examples/counter'
 

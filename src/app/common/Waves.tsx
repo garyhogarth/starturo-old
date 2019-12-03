@@ -1,42 +1,30 @@
 import React, { useEffect, useRef } from 'react'
-import { Animated, Easing, StyleSheet, View, ViewProps, ViewStyle } from 'react-native'
-import { interpolatePath } from 'react-native-redash'
-import Svg, { G, Path } from 'react-native-svg'
+import { Animated, View, ViewStyle } from 'react-native'
+import Svg, { Path } from 'react-native-svg'
 
 const AnimatedSvg = Animated.createAnimatedComponent(Svg)
 const AnimatedPath = Animated.createAnimatedComponent(Path)
 
 interface WavesProps {
-  style: ViewStyle | [ViewStyle]
+  height?: number
+  width?: number
+  waterHeight: number
 }
 
 export const Waves = (props: WavesProps) => {
-  const {
-    style = {
-      height: 100,
-      width: 100,
-      borderColor: '#000',
-      borderWidth: 1,
-    },
-    waterHeight,
-  } = props
+  const { height = 100, width = 100, waterHeight = 0 } = props
 
   return (
-    <View style={style}>
+    <View
+      style={{
+        height,
+        width,
+      }}>
       <Wave waveHeight={10} waterHeight={waterHeight} fill='rgba(124, 252, 0, 0.1)' waveWidth={200} />
       <Wave waveHeight={10} waterHeight={waterHeight} fill='rgba(124, 252, 0, 0.3)' waveWidth={150} />
       <Wave waveHeight={10} waterHeight={waterHeight} fill='rgba(124, 252, 0, 0.8)' waveWidth={100} />
     </View>
   )
-}
-
-Waves.defaultProps = {
-  style: {
-    height: 100,
-    width: 100,
-    borderColor: '#000',
-    borderWidth: 1,
-  },
 }
 
 interface WaveProps {

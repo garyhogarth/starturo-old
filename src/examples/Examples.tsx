@@ -1,3 +1,4 @@
+import { PointsBubble } from '#starturo/app/common/PointsBubble'
 import React, { useState } from 'react'
 import { Linking, SafeAreaView, View } from 'react-native'
 import { ListItem } from 'react-native-elements'
@@ -41,6 +42,15 @@ export const Examples = () => {
         chevron
         bottomDivider
       />
+      <ListItem
+        testID={`${TAG} Button Points Bubble`}
+        title='Points Bubble'
+        subtitle='Points Bubble'
+        onPress={() => navigate('Counter')}
+        chevron
+        bottomDivider
+      />
+      <PointsBubble />
       {links.map((link, i) => (
         <ListItem
           key={i}
