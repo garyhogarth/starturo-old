@@ -14,7 +14,7 @@
     "@eva-design/eva": "^1.2.0",
     "d3-interpolate-path": "2.1.1",
     "jetifier": "^1.6.4",
-    "lodash": "4.17.15",
+    "lodash": "4.17.21",
     "react": "16.9.0",
     "react-native": "0.61.2",
     "react-native-communications": "^2.2.1",
